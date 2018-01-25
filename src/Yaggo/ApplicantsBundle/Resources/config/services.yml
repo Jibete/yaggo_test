@@ -1,0 +1,4 @@
+services:
+#    yaggo_applicants.example:
+#        class: Yaggo\ApplicantsBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

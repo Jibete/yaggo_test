@@ -1,0 +1,75 @@
+<?php
+
+namespace Yaggo\ApplicantsBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Applicants
+ *
+ * @ORM\Table(name="applicants")
+ * @ORM\Entity
+ */
+class Applicants
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="a_id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $aId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="a_firstname", type="string", length=255, nullable=false)
+     */
+    private $aFirstname;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="a_lastname", type="string", length=255, nullable=false)
+     */
+    private $aLastname;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="a_email", type="string", length=255, nullable=false)
+     */
+    private $aEmail;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="a_phone", type="string", length=255, nullable=true)
+     */
+    private $aPhone;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="a_img_url", type="string", length=255, nullable=true)
+     */
+    private $aImgUrl;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="a_updated_at", type="date", nullable=true)
+     */
+    private $aUpdatedAt;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="a_created_at", type="date", nullable=false)
+     */
+    private $aCreatedAt;
+
+
+}
+

@@ -1,0 +1,24 @@
+applicants_index:
+    path:     /
+    defaults: { _controller: "YaggoApplicantsBundle:Applicants:index" }
+    methods:  GET
+
+applicants_show:
+    path:     /{aId}/show
+    defaults: { _controller: "YaggoApplicantsBundle:Applicants:show" }
+    methods:  GET
+
+applicants_new:
+    path:     /new
+    defaults: { _controller: "YaggoApplicantsBundle:Applicants:new" }
+    methods:  [GET, POST]
+
+applicants_edit:
+    path:     /{aId}/edit
+    defaults: { _controller: "YaggoApplicantsBundle:Applicants:edit" }
+    methods:  [GET, POST]
+
+applicants_delete:
+    path:     /{aId}/delete
+    defaults: { _controller: "YaggoApplicantsBundle:Applicants:delete" }
+    methods:  DELETE

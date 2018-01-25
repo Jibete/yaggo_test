@@ -1,0 +1,56 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+    <h1>{{ applicant.aFirstname }} {{ applicant.aLastname }}</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Identifiant</th>
+                <td>{{ applicant.aId }}</td>
+            </tr>
+            <tr>
+                <th>Prénom</th>
+                <td>{{ applicant.aFirstname }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ applicant.aLastname }}</td>
+            </tr>
+            <tr>
+                <th>E-mail</th>
+                <td>{{ applicant.aEmail }}</td>
+            </tr>
+            <tr>
+                <th>Téléphone</th>
+                <td>{{ applicant.aPhone }}</td>
+            </tr>
+            <tr>
+                <th>URL de l'avatar</th>
+                <td>{{ applicant.aImgUrl }}</td>
+            </tr>
+            <tr>
+                <th>Date de màj</th>
+                <td>{% if applicant.aUpdatedAt %}{{ applicant.aUpdatedAt|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Date de création</th>
+                <td>{% if applicant.aCreatedAt %}{{ applicant.aCreatedAt|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('applicants_index') }}">Retour à la liste</a>
+        </li>
+        <li>
+            <a href="{{ path('applicants_edit', { 'aId': applicant.aId }) }}">Modifier</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Supprimer">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/wamp64/www/Symfony/src/Yaggo/ApplicantsBundle/Entity/Applicants.php</file>
+            <file>file:/C:/wamp64/www/Symfony/app/Resources/views/applicants/edit.html.twig</file>
+            <file>file:/C:/wamp64/www/Symfony/src/Yaggo/ApplicantsBundle/Resources/config/doctrine/Applicants.orm.yml</file>
+            <file>file:/C:/wamp64/www/Symfony/app/Resources/views/applicants/index.html.twig</file>
+            <file>file:/C:/wamp64/www/Symfony/app/Resources/views/layout.html.twig</file>
+            <file>file:/C:/wamp64/www/Symfony/src/Yaggo/ApplicantsBundle/Resources/config/routing/applicants.yml</file>
+            <file>file:/C:/wamp64/www/Symfony/src/Yaggo/ApplicantsBundle/Form/ApplicantsType.php</file>
+            <file>file:/C:/wamp64/www/Symfony/app/Resources/views/applicants/new.html.twig</file>
+            <file>file:/C:/wamp64/www/Symfony/app/Resources/views/applicants/show.html.twig</file>
+            <file>file:/C:/wamp64/www/Symfony/src/Yaggo/ApplicantsBundle/Resources/config/routing.yml</file>
+        </group>
+    </open-files>
+</project-private>

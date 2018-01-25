@@ -1,0 +1,16 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+    <h1>Nouveau candidat</h1>
+
+    {{ form_start(form, { attr: {novalidate: 'novalidate'} }) }}
+        {{ form_widget(form) }}
+        <input type="submit" class="btn btn-info" value="Créer" />
+    {{ form_end(form) }}
+
+    <ul>
+        <li>
+            <a href="{{ path('applicants_index') }}">Retour à la liste</a>
+        </li>
+    </ul>
+{% endblock %}

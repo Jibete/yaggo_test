@@ -1,0 +1,58 @@
+Yaggo\ApplicantsBundle\Entity\Applicants:
+    type: entity
+    table: applicants
+    id:
+        aId:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: a_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        aFirstname:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: a_firstname
+        aLastname:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: a_lastname
+        aEmail:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: a_email
+        aPhone:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: a_phone
+        aImgUrl:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: a_img_url
+        aUpdatedAt:
+            type: datetime
+            nullable: true
+            column: a_updated_at
+        aCreatedAt:
+            type: datetime
+            nullable: true
+            column: a_created_at
+    lifecycleCallbacks: {  }

@@ -1,0 +1,47 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+    <h1>Candidats</h1>
+    
+    
+
+    <table>
+        <thead>
+            <tr>
+                <th>Prénom</th>
+                <th>Nom</th>
+                <th>E-mail</th>
+                <th>Téléphone</th>
+                <th>URL de l'avatar</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for applicant in applicants %}
+            <tr>
+                <td>{{ applicant.aFirstname }}</td>
+                <td>{{ applicant.aLastname }}</td>
+                <td>{{ applicant.aEmail }}</td>
+                <td>{{ applicant.aPhone }}</td>
+                <td>{{ applicant.aImgUrl }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('applicants_show', { 'aId': applicant.aId }) }}">Voir</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('applicants_edit', { 'aId': applicant.aId }) }}">Modifier</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('applicants_new') }}">Créer un nouveau candidat</a>
+        </li>
+    </ul>
+{% endblock %}

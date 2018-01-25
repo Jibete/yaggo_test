@@ -1,0 +1,7 @@
+yaggo_applicants_applicants:
+    resource: "@YaggoApplicantsBundle/Resources/config/routing/applicants.yml"
+    prefix:   /applicants
+
+yaggo_applicants_homepage:
+    path:     /
+    defaults: { _controller: YaggoApplicantsBundle:Default:index }

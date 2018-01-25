@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Yaggo{% endblock %}</title>
+    {% block javascripts %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {% endblock %}
+    {% block stylesheets %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    {% endblock %}
+  </head>
+  <body>
+    <div class="container">
+        <div class="btn-group">
+            <a href="{{ path('applicants_index') }}" class="btn btn-info" role="button">Accueil</a>
+            <a href="{{ path('applicants_new') }}" class="btn btn-info" role="button">Nouveau candidat</a>  
+        </div>
+    {% block body %}
+    {% endblock %}
+  </body>
+</html>
